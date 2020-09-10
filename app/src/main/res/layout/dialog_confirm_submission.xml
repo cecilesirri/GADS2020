@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:backgroundTint="@color/colorAccent" android:src="@drawable/ic_baseline_cancel_24" android:layout_marginTop="@dimen/standard_margin" android:layout_marginEnd="@dimen/medium_margin" android:layout_alignParentEnd="true" android:layout_alignParentTop="true" android:id="@+id/cancel_submission_button"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="@dimen/extra_large_margin" android:id="@+id/text" android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="@dimen/large_margin" android:layout_centerHorizontal="true" android:layout_below="@+id/cancel_submission_button">
+
+    <com.google.android.material.textview.MaterialTextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/are_you_sure_text" android:textStyle="bold" android:textSize="@dimen/text_size_large" android:text="@string/are_you_sure"/>
+
+    <com.google.android.material.textview.MaterialTextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/question_mark" android:textStyle="bold" android:textSize="@dimen/text_size_largest" android:text="@string/question_mark" android:paddingBottom="@dimen/standard_padding" android:paddingEnd="@dimen/standard_padding" android:paddingStart="@dimen/medium_padding"/>
+
+</LinearLayout>
+
+    <com.google.android.material.button.MaterialButton android:layout_height="wrap_content" android:layout_width="180dp" android:layout_marginTop="@dimen/extra_large_margin" android:id="@+id/confirm_project_submission_button" android:layout_marginBottom="@dimen/extra_large_margin" android:layout_centerHorizontal="true" android:layout_below="@+id/text" android:textStyle="bold" android:textSize="@dimen/text_size_large" android:text="@string/yes" app:strokeColor="@color/colorOrange" app:cornerRadius="@dimen/button_yes_corner_radius" android:textColor="@color/colorOrange" android:textAllCaps="false" android:padding="@dimen/medium_padding" app:strokeWidth="1.5dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+</RelativeLayout>

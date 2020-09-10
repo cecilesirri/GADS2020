@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout tools:context=".SubmitProjectActivity" android:orientation="vertical" android:background="@drawable/background_shaped" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.appbar.AppBarLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay" android:layout_marginBottom="@dimen/extra_large_margin">
+
+
+    <com.google.android.material.appbar.MaterialToolbar android:background="?attr/colorPrimary" android:layout_height="wrap_content" android:layout_width="match_parent" android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar">
+
+    <ImageView android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/toolbar_logo" android:padding="@dimen/standard_padding" android:maxHeight="?attr/actionBarSize" android:foregroundGravity="center" android:contentDescription="@string/appbar_logo" android:layout_marginEnd="@dimen/large_margin" android:layout_marginRight="@dimen/large_margin"/>
+
+</com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView android:background="?attr/colorPrimary" android:layout_height="wrap_content" android:layout_width="match_parent" android:textStyle="bold" android:textSize="@dimen/text_size_large" android:textColor="@color/colorOrange" android:text="@string/project_submission" android:paddingBottom="@dimen/medium_padding" android:paddingEnd="@dimen/standard_padding" android:paddingTop="@dimen/standard_padding" android:paddingStart="@dimen/standard_padding" android:gravity="center"/>
+
+    <View android:background="@drawable/view_shape" android:layout_height="2dp" android:layout_width="match_parent" android:layout_marginBottom="@dimen/large_margin" android:id="@+id/separator" android:padding="@dimen/text_padding" android:layout_below="@+id/post_stats_layout"/>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginBottom="@dimen/extra_large_margin" android:baselineAligned="false" android:layout_marginTop="@dimen/standard_margin">
+
+    <com.google.android.material.textfield.TextInputEditText android:background="@drawable/text_input_background" android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/input_first_name" android:padding="@dimen/standard_padding" android:layout_marginEnd="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:textStyle="bold" android:textCursorDrawable="@drawable/text_input_cursor" android:inputType="text" android:hint="@string/first_name" android:layout_weight="1" android:layout_marginStart="@dimen/standard_margin" android:layout_marginLeft="@dimen/standard_margin"/>
+
+    <com.google.android.material.textfield.TextInputEditText android:background="@drawable/text_input_background" android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/input_last_name" android:padding="@dimen/standard_padding" android:layout_marginEnd="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:textStyle="bold" android:textCursorDrawable="@drawable/text_input_cursor" android:inputType="text" android:hint="@string/last_name" android:layout_weight="1" android:layout_marginStart="@dimen/small_margin" android:layout_marginLeft="@dimen/standard_margin"/>
+
+</LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText android:background="@drawable/text_input_background" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginBottom="@dimen/extra_large_margin" android:id="@+id/input_email" android:padding="@dimen/standard_padding" android:layout_marginEnd="@dimen/large_margin" android:textStyle="bold" android:textCursorDrawable="@drawable/text_input_cursor" android:inputType="textEmailAddress" android:hint="@string/email_address" android:layout_marginStart="@dimen/large_margin"/>
+
+    <com.google.android.material.textfield.TextInputEditText android:background="@drawable/text_input_background" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginBottom="@dimen/extra_large_margin" android:id="@+id/input_github_link" android:padding="@dimen/standard_padding" android:layout_marginEnd="@dimen/large_margin" android:textStyle="bold" android:textCursorDrawable="@drawable/text_input_cursor" android:inputType="textImeMultiLine" android:hint="@string/project_on_github_link" android:layout_marginStart="@dimen/large_margin"/>
+
+    <com.google.android.material.button.MaterialButton android:background="@drawable/view_shape_button_background" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/button_submit" android:textStyle="bold" android:textSize="@dimen/text_size_big" android:textColor="@color/colorAccent" android:text="@string/submit" app:backgroundTint="@null" android:textAllCaps="false" android:textAlignment="center" android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <com.google.android.material.card.MaterialCardView app:cardCornerRadius="@dimen/card_corner_radius" android:layout_margin="@dimen/standard_margin" android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView android:layout_height="wrap_content" android:layout_width="0dp" android:src="@drawable/top_learner_badge" android:layout_weight="0.45" android:layout_marginEnd="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:id="@+id/top_learner_badge"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="0dp" android:orientation="vertical" android:layout_weight="0.55" android:layout_gravity="center">
+
+    <com.google.android.material.textview.MaterialTextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/top_learner_name" android:textStyle="bold" android:textSize="@dimen/text_size_big" android:text="@string/learner_name" android:padding="@dimen/text_padding"/>
+
+    <com.google.android.material.textview.MaterialTextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/top_learner_description" android:textSize="@dimen/text_size_small" android:text="@string/learning_hours" android:paddingEnd="@dimen/text_padding" android:paddingStart="@dimen/text_padding" android:layout_below="@+id/top_learner_name"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

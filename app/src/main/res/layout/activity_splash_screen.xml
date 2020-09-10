@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout tools:context=".SplashScreenActivity" android:background="@drawable/background_shaped" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatImageView android:layout_height="match_parent" android:layout_width="match_parent" app:layout_constraintTop_toBottomOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintBottom_toTopOf="parent" android:src="@drawable/gads_logo" android:padding="@dimen/standard_padding" android:layout_margin="@dimen/standard_margin" android:id="@+id/gads_logo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
